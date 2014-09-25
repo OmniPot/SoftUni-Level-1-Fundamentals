@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class _6_SumTwoNumbers {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Insert number: ");
+		int firstNum = sc.nextInt();
+		System.out.print("Insert number to add: ");
+		int secondNum = sc.nextInt();
+		System.out.printf("The result is: %d", firstNum + secondNum);
+		
+	}
+}

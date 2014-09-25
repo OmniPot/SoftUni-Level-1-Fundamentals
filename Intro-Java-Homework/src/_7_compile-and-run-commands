@@ -1,0 +1,5 @@
+javac SumTwoNumbers.java
+java SumTwoNumbers
+Insert number: 133
+Insert number to add: 266
+The result is: 399
