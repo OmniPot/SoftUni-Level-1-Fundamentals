@@ -1,0 +1,11 @@
+body{
+    background-color: skyblue;
+}
+img{
+    width: 13%;
+    height: 13%;
+}
+dt{
+    float:left;
+    font-weight: bolder;
+}

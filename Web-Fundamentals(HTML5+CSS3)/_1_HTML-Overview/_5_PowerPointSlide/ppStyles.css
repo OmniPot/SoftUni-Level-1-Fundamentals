@@ -1,0 +1,40 @@
+body {
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font:bolder 350% calibri, sans-serif;
+}
+#title{
+    margin: 2% 0 0 2%;
+    display: inline-block;
+    color:#edba5e;
+}
+#fondationLogo {
+    float: right;
+    margin: 2% 2% 0 0;
+}
+.list li{
+    list-style-type: square;
+    font:60% calibri, sans-serif;
+    color:#edba5e;
+    margin: .5% 0 .5% 6%;
+}
+.list li dl p{
+    font: 100% calibri, sans-serif;
+    color:white;
+}
+.list li dl p span{
+    font:bold 110% calibri, sans-serif;
+    color:#edba5e;
+}
+.list li dl dd{
+    margin: 1% 0 0 2%;
+    padding: .3%;
+    width: 90%;
+    background-color: rgba(32, 32, 30, 0.7);
+    border: solid .07em #fbeec9;
+}
+.list li dl dd p{
+    margin: 0 0 0 1%;
+    font: 90% calibri, sans-serif;
+    color:#fbeec9;
+}
