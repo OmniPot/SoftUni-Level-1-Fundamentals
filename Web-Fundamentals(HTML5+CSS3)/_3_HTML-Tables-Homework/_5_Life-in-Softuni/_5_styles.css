@@ -1,0 +1,67 @@
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    font: 130% verdana;
+    width: 35%;
+}
+
+th {
+    padding: 5%;
+    font: bolder 200% verdana;
+}
+
+table table {
+    width: 90%;
+    margin: 5%;
+}
+
+.google {
+    width: 50%;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 3em;
+}
+
+.github {
+    width: 25%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.facebook {
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.youtube {
+    width: 25%;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.food {
+    width: 25%;
+    padding: 5em 0 0 3em;
+}
+
+.game {
+    width: 50%;
+    padding-top: 5em;
+}
+
+.beer {
+    font: 130% verdana;
+    text-align: right;
+    vertical-align: middle;
+    padding: 1.5em .5em 1.5em 0;
+}
+
+.social, .sleep {
+    text-align: center;
+    vertical-align: middle;
+    font: bold 45% verdana;
+    padding: 1.5em 0 1.5em 0;
+}

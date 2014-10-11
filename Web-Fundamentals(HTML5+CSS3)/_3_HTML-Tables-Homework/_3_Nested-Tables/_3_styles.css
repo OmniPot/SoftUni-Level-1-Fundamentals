@@ -1,0 +1,22 @@
+body {
+    font: 24px arial, sans-serif;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+#t2 td {
+    padding: .15em;
+}
+
+#t2 {
+    font-size: 280%;
+    margin: 10px;
+}
+
+#imageCell {
+    padding: .8em .4em .8em .4em;
+
+}
+

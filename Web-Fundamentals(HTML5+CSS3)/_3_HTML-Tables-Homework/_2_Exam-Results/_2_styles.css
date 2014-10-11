@@ -1,0 +1,24 @@
+body {
+    font: 16px arial, sans-serif;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+thead td {
+    text-align: center;
+    font-size: 180%;
+}
+
+thead th {
+    padding: .3em .3em .3em .5em;
+}
+
+td {
+    padding: .2em .3em .2em .5em;
+}
+
+tfoot td {
+    text-align: right;
+}

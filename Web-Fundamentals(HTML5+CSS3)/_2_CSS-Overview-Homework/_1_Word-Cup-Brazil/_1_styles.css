@@ -1,0 +1,195 @@
+body {
+    font: 11px Verdana;
+}
+
+#mainWrapper {
+    width: 48%;
+    background-color: #00923e;
+    padding: 10px;
+}
+
+table {
+    background: #000;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1px;
+    border-radius: 1em;
+}
+
+th {
+    font: bolder 120% verdana;
+    background: #f8c711;
+    padding: .5em 0 .5em 0;
+}
+
+td {
+    font: 90% verdana;
+}
+
+tr {
+    background: #00923e;
+}
+
+th:first-child {
+    text-align: right;
+    border-top-left-radius: .8em;
+}
+
+th:nth-child(3) {
+    text-align: left;
+}
+
+th:last-child {
+    border-top-right-radius: .8em;
+}
+
+tr:nth-child(even) {
+    background: lightgrey;
+}
+
+tr:nth-child(odd) {
+    background: white;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 1.2em;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 1.2em;
+}
+
+td:nth-child(1), td:nth-child(3) {
+    width: 19%;
+}
+
+td:nth-child(5), td:nth-child(7) {
+    width: 15%;
+}
+
+td:nth-child(6) {
+    width: 12%;
+}
+
+td:last-child {
+    width: 5%;
+}
+
+.countryLeft {
+    padding: 1em;
+    text-align: right;
+}
+
+.result {
+    text-align: center;
+}
+
+.group {
+    text-align: center;
+}
+
+.firstBet {
+    text-align: right;
+}
+
+#brImg, #arImg, #poImg, #geImg, #itImg, #neImg, #meImg, #enImg, #spImg, #boImg {
+    display: inline-block;
+    float: right;
+    margin: 0 2% 0 2%;
+    width: 2em;
+    height: 1.5em;
+}
+
+#brImg {
+    margin-right: -.7em;
+    background: no-repeat url(res/BrasilFlag.png);
+}
+
+#meImg {
+    float: left;
+    background: no-repeat url(res/MexicoFlag.png);
+}
+
+#spImg {
+    margin-right: -.7em;
+    background: no-repeat url(res/SpainFlag.png);
+}
+
+#neImg {
+    float: left;
+    background: no-repeat url(res/NetherlandsFlag.png);
+}
+
+#itImg {
+    margin-right: -.7em;
+    background: no-repeat url(res/ItalyFlag.png);
+}
+
+#enImg {
+    float: left;
+    background: no-repeat url(res/EnglandFlag.png);
+}
+
+#arImg {
+    margin-right: -.7em;
+    background: no-repeat url(res/ArgentinaFlag.png);
+}
+
+#boImg {
+    float: left;
+    background: no-repeat url(res/B&HFlag.png);
+}
+
+#geImg {
+    margin-right: -.7em;
+    background: no-repeat url(res/GermanyFlag.png);
+}
+
+#poImg {
+    float: left;
+    background: no-repeat url(res/PortugalFlag.png);
+}
+
+.redBet {
+    width: 2.5em;
+    background: no-repeat url(res/RedBet.png);
+}
+
+.greenBet {
+    width: 2.5em;
+    background: no-repeat url(res/GreenBet.png);
+}
+
+.greenOpt {
+    border: 1px solid lightgray;
+    background: #fff;
+    color: green;
+    text-align: center;
+    display: inline-block;
+}
+
+.greenOpt:nth-child(odd) {
+    margin-left: 2%;
+}
+
+.redOpt {
+    border: 1px solid lightgray;
+    background: #e2e2e2;
+    color: red;
+    text-align: center;
+    display: inline-block;
+}
+
+.redOpt:nth-child(odd) {
+    margin-left: 2%;
+}
+
+.arrow {
+    color: black;
+    display: inline-block;
+    font-size: 75%;
+}
+
+p {
+    margin: 1em 0 1em 0;
+}
