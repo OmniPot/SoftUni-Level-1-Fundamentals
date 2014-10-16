@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Styling HTML form</title>
+    <link rel="stylesheet" href="_3_styles.css"/>
+</head>
+<body>
+<div id="wrapper">
+    <form class="regForm">
+        <p>Step 1: Your details</p>
+
+        <div>
+            <span>Name</span>
+            <input type="text"/>
+        </div>
+        <div>
+            <span>Email</span>
+            <input type="text"/>
+        </div>
+        <div>
+            <span>Phone</span>
+            <input type="text"/>
+        </div>
+
+        <p>Step 1: Delivery address</p>
+
+        <div class="clearfix">
+            <span>Address</span>
+            <textarea></textarea>
+        </div>
+        <div>
+            <span>Post code</span>
+            <input type="text"/>
+        </div>
+        <div>
+            <span>Country</span>
+            <input type="text"/>
+        </div>
+
+        <p>Step 1: Card details</p>
+
+        <div class="cardType clearfix">
+            <p>Card Type</p>
+
+            <div class="visa">
+                <input type="radio" name="type"/>
+                <span>VISA</span>
+            </div>
+            <div class="amex">
+                <input type="radio" name="type"/>
+                <span>AmEx</span>
+            </div>
+            <div class="master">
+                <input type="radio" name="type"/>
+                <span>Mastercard</span>
+            </div>
+
+        </div>
+        <div>
+            <span>Card Number</span>
+            <input type="text"/>
+        </div>
+        <div>
+            <span>Security code</span>
+            <input type="text"/>
+        </div>
+        <div>
+            <span>Name on card</span>
+            <input type="text"/>
+        </div>
+
+        <button type="submit">BUY IT!</button>
+
+    </form>
+</div>
+</body>
+</html>

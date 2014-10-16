@@ -1,0 +1,105 @@
+body {
+    font: normal 16px verdana, monospaced;
+}
+
+.mainBox {
+    width: 39%;
+    margin: 50px;
+    padding: 1%;
+    text-align: center;
+    border-top: 6px dotted yellow;
+    border-right: 10px solid green;
+    border-left: 5px dashed red;
+    border-bottom: 9px double blue;
+    box-shadow: #555555 15px 15px 6px;
+}
+
+.mainBox > h1 {
+    margin: 0 0 4% 0;
+    font-size: 2.4rem;
+    font-weight: normal;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    text-shadow: #bbbbbb 10px 10px 10px;
+}
+
+.mainBox > div {
+    position: relative;
+    width: 88%;
+    margin: 0 auto 2% auto;
+    padding: 3%;
+    border: 3px solid green;
+    border-radius: 16em/16em;
+    box-shadow: 0 0 0 3px blue;
+}
+
+.mainBox > div:before {
+    border-radius: 16em/16em;
+    border: 3px solid yellow;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.mainBox > div:after {
+    border-radius: 16em/16em;
+    border: 3px solid red;
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+}
+
+.mainBox > div > h2 {
+    font-size: 18px;
+    font-weight: normal;
+    text-shadow: #bbbbbb 10px 10px 10px;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0% 2% 3% 2%;
+}
+
+.mainBox > div > span {
+    font-size: 14px;
+    text-shadow: 0 0 black;
+    padding: 0 12px;
+    background: #d8921a;
+    border: outset 3px #edba5e;
+}
+
+.speech {
+    position: absolute;
+    width: 18%;
+    top: -60%;
+    left: 99%;
+    background: rgba(160, 160, 160, .7);
+    font-weight: bold;
+    color: white;
+    padding: .7em;
+    border: 2px dashed white;
+    border-radius: 5em/5em;
+    box-shadow: 0 0 0 5px rgba(160, 160, 160, .7);
+}
+
+.speech:nth-of-type(2) {
+    width: 3%;
+    top: -1%;
+    left: 90%;
+    border-width: 2px;
+    font-size: 14px;
+    padding: .3em;
+}
+
+.speech:nth-of-type(3) {
+    width: 1.7%;
+    top: 37%;
+    left: 83%;
+    border-width: 2px;
+    font-size: 7px;
+    padding: .3em;
+}
