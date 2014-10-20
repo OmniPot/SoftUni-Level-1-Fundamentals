@@ -1,0 +1,94 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    font: normal 16px Tahoma, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+}
+
+form > nav > h1 {
+    color: #234465;
+    margin: .5% 0;
+    padding: .5% 0;
+}
+
+aside {
+    background: #f7fcff;
+    font: normal 14px Tahoma, sans-serif;
+    display: inline-block;
+    width: 23%;
+    border: 1px solid #8bd0f9;
+}
+
+aside {
+    margin: .5%;
+}
+
+aside > div {
+    margin: 10% 0;
+}
+
+aside > div > p {
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+nav {
+    float: left;
+    display: inline-block;
+    width: 75%;
+}
+
+nav > button {
+    width: 31.5%;
+    margin: .5%;
+    font: normal 15px Tahoma, sans-serif;
+    color: #234465;
+    text-align: left;
+    background: transparent;
+    border: 1px solid #8bd0f9;
+    border-radius: 10px 10px 0 10px;
+
+}
+
+nav > button > header > p{
+    margin: 0% 10% 0 10%;
+    margin-top: 0;
+}
+
+nav > button > header > p:first-child{
+    margin: 5% 5% 0 10%;
+    font-weight: bold;
+}
+
+nav > button > img {
+    max-width: 100%;
+    margin: 2%;
+}
+
+nav > button > div {
+    float: right;
+    text-align: center;
+    color: #fff;
+    background: #234465;
+    width: 60%;
+    padding: 5% 2%;
+    border-radius: 10px 0 0 0;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+
+
