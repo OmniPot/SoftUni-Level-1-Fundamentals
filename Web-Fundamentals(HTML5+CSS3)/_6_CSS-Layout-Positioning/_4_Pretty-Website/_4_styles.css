@@ -1,0 +1,175 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #111;
+    font: 12px Arial, sans-serif;
+}
+
+.pageWrap {
+    background: #ffffff;
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+}
+
+.pageWrap > header {
+    width: 100%;
+    height: 325px;
+    background: #dadada url("headerBackground.jpg") no-repeat center top;
+    background-size: 100%;
+}
+
+header > h1 {
+    color: #ffffff;
+    position: absolute;
+    right: 4%;
+    bottom: 22%;
+    font-size: 2.6em;
+}
+
+header > nav {
+    background: linear-gradient(to bottom, #efefef 0%, #dadada 100%);
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+}
+
+header > nav > ul {
+    width: 100%;
+    list-style: none;
+}
+
+header > nav > ul > li {
+    padding: 1% 3.5%;
+    background: linear-gradient(to bottom, #efefef 0%, #dadada 100%);
+    display: inline-block;
+    border-right: 2px solid #ffffff;
+}
+
+.active{
+    background: linear-gradient(to bottom, #bfbfbf 0%, #b4b4b4 100%);
+}
+
+.active > a{
+    color: #fff;
+}
+
+header > nav > ul > li > a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #626161;
+}
+
+main {
+    position: static;
+    display: inline-block;
+    width: 65%;
+    margin-left: 1%;
+    padding: 2.5% 0 1% 2.5%;
+}
+
+main > header {
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+main > header > h2 {
+    color: #84be19;
+    margin-bottom: 3%;
+}
+
+main > header > p {
+    color: #000;
+}
+
+main > header > p:first-line {
+    font-weight: bold;
+}
+
+section {
+    padding: 3%;
+    margin-top: 3%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+section > h2 {
+    color: #84be19;
+    font-size: 1.8em;
+}
+
+section > article {
+    display: block;
+    float: left;
+    margin: 2% 0;
+}
+
+section > article > h3, section > article > p {
+    display: inline-block;
+    width: 69%;
+    margin-bottom: 2%;
+}
+
+section > article > img {
+    float: left;
+    display: inline-block;
+    width: 28%;
+    margin-right: 3%;
+}
+
+aside{
+    width: 22%;
+    padding:2.5% 4.5% 0 0;
+    float: right;
+    display: inline-block;
+}
+
+aside > article{
+    padding: 8%;
+    margin-bottom: 9%;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+aside > article > h2{
+    font-size: 2.2em;
+    color: #84be19;
+    margin-bottom: 8%;
+}
+
+aside > article > h4{
+    margin-top: 8%;
+}
+
+aside > article > a{
+    font-weight: bold;
+    color: #84be19;
+}
+
+.news{
+    background-color: #eee;
+}
+
+.messages span{
+    font-weight: bold;
+}
+
+.messages a{
+    font-weight: bold;
+    display: block;
+    margin-top: 8%;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}

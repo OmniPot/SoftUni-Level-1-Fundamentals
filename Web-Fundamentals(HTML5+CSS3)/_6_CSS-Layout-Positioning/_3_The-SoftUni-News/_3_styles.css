@@ -1,0 +1,118 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 10px Tahoma, sans-serif;
+    color: #5A5A5A;
+}
+
+section {
+    background: #eee;
+    width: 85%;
+    padding: 1% 7.5%;
+    margin: 0 auto;
+}
+
+section > header {
+    font-size: 2.2em;
+    display: block;
+    margin: 2% 0 2% 1%;
+    color: #2A6496;
+}
+
+article {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    height: 320px;
+    margin: 0 1%;
+    padding: 2.5% 3%;
+    background: #fff;
+    box-shadow: 0 0 2px #aaa;
+}
+
+article > header {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+article > header > h3 {
+    color: #2A6496;
+    height: 1em;
+    margin: 0 0 10% 0;
+}
+
+article > header > p {
+    margin: 15% 0 0 0;
+    color: rgba(0, 0, 0, .6);
+    font-weight: normal;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+article > header > div {
+    float: right;
+    color: rgba(0, 0, 0, 1);
+    font-weight: normal;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin: 7% 0;
+    background: rgba(128, 128, 128, .2);
+}
+
+article > content > img {
+    display: block;
+    max-width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+article > content > p {
+    height: 40px;
+    margin: 7% 0 0 0;
+    color: rgba(0, 0, 0, .6);
+    line-height: 1.5em;
+    font-size: 1.4em;
+    overflow: hidden;
+}
+
+article > footer {
+    color: rgba(128, 128, 128, .7);
+}
+
+article > footer > p > span {
+    font-weight: bold;
+    color: #000;
+}
+
+.paging {
+    list-style: none;
+    width: 100%;
+    margin: 4% 1% 0 1%;
+}
+
+.paging > li {
+    float: left;
+    background: #4ca0db;
+    display: inline-block;
+    margin: 0;
+    padding: .8% 1%;
+    border: 1px solid #eee;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.active {
+    background: #ff9c00 !important;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}

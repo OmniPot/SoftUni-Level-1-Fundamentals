@@ -1,0 +1,144 @@
+html * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    font: 12px Tahoma, Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    background: #A9A9A9;
+}
+
+header > nav {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    background: #234465;
+}
+
+header > nav > ul {
+    float: right;
+    text-align: center;
+    width: 73%;
+}
+
+header > nav > ul > li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 1% .5% 2% .5%;
+    margin: 0 2%;
+}
+
+header > nav > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header > nav > a.hLogo {
+    float: left;
+    width: 24%;
+    height: 70%;
+    margin: 1.5% 0 1.5% 1.5%;
+    background: url("headerLogo.JPG") no-repeat;
+    background-size: 100%;
+}
+
+.notif_search {
+    float: right;
+    text-align: right;
+    color: #ffffff;
+    padding: 2% 4% 1% 0;
+    width: 50%;
+}
+
+.notif_number {
+    display: inline-block;
+    padding: 1% 0 1% 1%;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.notif_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3%;
+    background: url("bell.JPG") no-repeat center;
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+form {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+form > input {
+    display: inline-block;
+    width: 250px;
+    min-height: 20px;
+    height: 28px;
+    padding-left: 2%;
+    margin-right: -2%;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    vertical-align: text-bottom;
+}
+
+form > button {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 25px;
+    height: 28px;
+    background: #fff url("glass.JPG") no-repeat center;
+    background-size: 80%;
+    border: none;
+    border-left: 2px solid #A9A9A9;
+    border-radius: 0 5px 5px 0;
+}
+
+.arrow {
+    font-size: .7em;
+}
+
+.user {
+    padding-bottom: 50%;
+}
+
+ul {
+    display: inline-block;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li ul {
+    position: absolute;
+    top: 35px;
+    display: block;
+    visibility: hidden;
+    width: 150px;
+    padding: 0 1%;
+    text-align: left;
+    background: #555555;
+    outline: none;
+    z-index: 100;
+}
+
+ul li ul li {
+    border-top: 1px solid #999;
+    padding: 5%;
+}
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Website Footer</title>
+    <link rel="stylesheet" href="_2_styles.css"/>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<footer>
+    <section class="buttons">
+        <form>
+            <button>Apply Now</button>
+            <button>Fast track courses</button>
+        </form>
+    </section>
+
+    <section class="about">
+        <header><h4>ABOUT THE UNIVERSITY</h4></header>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Professions</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">Partner universities</a></li>
+            <li><a href="#">Trainers</a></li>
+            <li><a href="#">Dorms</a></li>
+            <li><a href="#">Apply</a></li>
+        </ul>
+    </section>
+
+    <section class="friends">
+        <header><h4>OUR FRIENDS</h4></header>
+        <ul>
+            <li><a href="#">Svetlin Nakov Blog</a></li>
+            <li><a href="#">C# book</a></li>
+        </ul>
+    </section>
+
+    <section class="learning">
+        <header><h4>SOFTWARE UNIVERSITY LEARNING SYSTEM - 1.0.5287</h4></header>
+        <p> 2013-2014 - Software University. All Rights Reserved.</p>
+
+        <form>
+            <button class="twitterBtn" onclick="window.location = window.open('http://www.twitter.com')"></button>
+            <button class="fbBtn" onclick="window.location = window.open('http://www.facebook.com')"></button>
+            <button class="gplusBtn" onclick="window.location = window.open('http://www.google.com')"></button>
+        </form>
+    </section>
+
+    <section class="fb">
+        <div class="fb-like-box" data-href="https://www.facebook.com/SoftwareUniversity" data-width="240"
+             data-height="240" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false"
+             data-show-border="false">
+             </div>
+    </section>
+</footer>
+</body>
+</html>
