@@ -1,0 +1,46 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    width: 98%;
+    margin: 0 auto;
+    font: normal 16px Tahoma, Arial, sans-serif;
+}
+
+div{
+    float: left;
+    width: 15%;
+    margin-right: 5%;
+    height: 160px;
+    display: inline-block;
+}
+
+h2, h3{
+    font-weight: normal;
+    padding-bottom: 8%;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+a{
+    width: 100%;
+    padding: 2%;
+    display: inline-block;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    line-height: 1.6em;
+    color: #999;
+}
+
+div > p > a{
+    display: inline;
+}

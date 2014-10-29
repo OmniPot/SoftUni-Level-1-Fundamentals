@@ -1,0 +1,46 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 95%;
+    margin: 0 auto;
+    font: 16px Tahoma, Arial, sans-serif;
+}
+
+h1{
+    font-weight: normal;
+    padding-bottom: 4%;
+    padding-left: 2%;
+}
+
+nav{
+    border-bottom: 1px solid #888;
+}
+
+form{
+    float: right;
+    display: inline-block;
+}
+
+input{
+    padding: 2%;
+}
+
+a{
+    text-decoration: none;
+    float: left;
+    margin-right: 7%;
+    padding: .5%;
+    display: inline;
+    color: #888;
+}
+
+
+
+.clearfix:after{
+    display: block;
+    clear: both;
+    content: "";
+}

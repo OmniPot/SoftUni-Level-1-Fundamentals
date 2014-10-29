@@ -1,0 +1,55 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font: 16px Tahoma, Arial, sans-serif;
+}
+
+article{
+    width: 94%;
+    padding: 3%;
+}
+
+article header{
+    padding-bottom: 3%;
+}
+
+article header h1{
+    font-weight: normal;
+}
+
+article header p{
+    letter-spacing: 2px;
+    font-size: .7em;
+    color: #888;
+}
+
+span{
+    text-decoration: underline;
+}
+
+article > p{
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: 2% 0 4% 0;
+}
+
+article:last-of-type footer{
+    padding-bottom: 5%;
+}
+
+body > a:last-of-type{
+    width: 30%;
+    display: block;
+    padding: 1%;
+    margin: 4% 0 0 2%;
+}
+
+a{
+    text-decoration: none;
+    color: steelblue;
+}

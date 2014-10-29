@@ -1,0 +1,80 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 14px Tahoma, Arial, sans-serif;
+}
+
+.wrapper {
+    width: 67%;
+    padding: 2%;
+    margin: 0 auto;
+    background: #ffc0cb;
+    border-radius: 10px;
+    text-align: center;
+}
+
+figure {
+    margin-right: 1%;
+    display: inline-block;
+}
+
+figcaption{
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+.picture {
+    text-align: left;
+    width: 23%;
+}
+
+.picture img {
+    display: inline-block;
+    width: 100%;
+    height: 180px;
+}
+
+.picture meter {
+    width: 70%;
+}
+
+.music{
+    width: 33%;
+}
+
+audio {
+    padding-top: 3px;
+    display: inline-block;
+}
+
+.nowPlaying {
+    background: #000;
+    width: 100%;
+    height: 80px;
+}
+
+.nowPlaying {
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.video {
+    width: 41%;
+    margin: 0;
+}
+
+.video video {
+    width: 100%;
+}
+
+.clearfix:after{
+    clear: both;
+    display: block;
+    content: '';
+}

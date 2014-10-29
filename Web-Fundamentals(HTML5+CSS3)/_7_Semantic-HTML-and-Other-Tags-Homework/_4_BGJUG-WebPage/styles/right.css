@@ -1,0 +1,30 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 60%;
+    margin: 0 auto;
+    font: 16px Tahoma, Arial, sans-serif;
+}
+
+div{
+    margin: 30% 0 0 0;
+}
+
+p{
+    color: #888;
+    margin: 2%;
+}
+
+form > select{
+    width: 100%;
+    padding: 1%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+ div > p:last-of-type{
+    letter-spacing: 3px;
+}

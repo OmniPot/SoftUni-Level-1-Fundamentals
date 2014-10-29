@@ -1,0 +1,22 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 60%;
+    margin: 0 auto;
+    font: 16px Tahoma, Arial, sans-serif;
+}
+
+div{
+    margin: 40% 0 0 0;
+    border-top: 1px solid #ccc;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: steelblue;
+    padding: 3%;
+}
