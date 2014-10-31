@@ -1,0 +1,77 @@
+ul, ol {
+    list-style: none;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.navbar {
+    background: green;
+    color: #000;
+}
+
+.navbar .navbar-brand {
+    color: #000;
+}
+
+.navbar .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
+    background: lightgreen;
+    color: #000;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+
+.container .jumbotron {
+    float: left;
+    display: inline-block;
+    width: 70%;
+}
+
+.containerSide {
+    display: inline-block;
+    float: right;
+    width: 30%;
+    padding: 0 2%;
+}
+
+.nav .nav-tabs .nav-stacked {
+    padding: 1%;
+    border: 1px solid #ddd;
+}
+
+.nav-tabs > li > a {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #000000;
+}
+
+.nav-tabs li {
+    margin-bottom: -2px;
+}
+
+.nav-tabs > li a:hover {
+    background: lightgreen;
+}
+
+.thumbnails {
+    padding: 0;
+}
+
+.thumbnail {
+    border: none;
+    margin-bottom: 0;
+}
+
+.span4 {
+    display: inline-block;
+    width: 23.1%;
+    margin: 0 1% 0 0;
+}
+
+.btn {
+    border: 1px solid lightgray;
+    color: #000;
+}

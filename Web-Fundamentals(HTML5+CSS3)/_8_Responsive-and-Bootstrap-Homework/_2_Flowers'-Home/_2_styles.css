@@ -1,0 +1,212 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("background-flowers.jpg");
+    background-size: 50%;
+    font: 14px Tahoma, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none
+}
+
+img {
+    max-width: 100%;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#wrapper > header, .left, .right, section, footer {
+    background: rgba(235, 235, 235, 0.75);
+    border: 2px solid #000;
+    margin: .5%;
+    padding: .5% 1.2%;
+}
+
+#wrapper > header {
+    width: 100%;
+}
+
+header > h1 > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header > h1 > a > img {
+    width: 25%;
+    align-self: flex-start;
+}
+
+header > h1 > a > span {
+    font-size: 1.2em;
+    color: #000;
+}
+
+header > nav {
+    width: 100%;
+    margin-top: 20px;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header > nav > ul > li {
+    width: 130px;
+    background: deeppink;
+    text-align: center;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    border: 1px solid #000;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5% 1%;
+    color: #fff;
+}
+
+.left {
+    padding: 1%;
+    order: 1;
+}
+
+.left ul li a span, .left ul li a img {
+    color: #000;
+    vertical-align: middle;
+}
+
+.right {
+    padding: 4% 2%;
+    order: 3;
+}
+
+.left, .right {
+    width: 15%;
+    height: auto;
+    align-items: flex-start;
+}
+
+section {
+    order: 2;
+    width: 57%;
+}
+
+section {
+    padding: 1%;
+    height: 100%;
+}
+
+section article header h1 {
+    font-size: 2em;
+}
+
+section > article > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section > article > div > img {
+    width: 24%;
+    height: 15%;
+    margin: .5%;
+}
+
+footer {
+    align-self: flex-end;
+    width: 100%;
+    order: 5;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    #wrapper {
+        width: 100%;
+    }
+    section > article > div > img {
+        width: 30%;
+        height: 15%;
+        margin: .5%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .left, .right, section{
+        width: 100%;
+    }
+
+    header > nav > ul > li{
+        width: 25%;
+    }
+
+    section{
+        order: 1;
+    }
+
+    .left{
+        order: 2;
+    }
+
+    .right{
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header > nav{
+        width: 95%;
+        margin: 2% auto;
+    }
+
+    header > h1 > a{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > h1 > a > img {
+        align-self: center;
+        width: 50%;
+        order: 1;
+    }
+
+    header > h1 > a > span {
+        order: 2;
+    }
+
+    header > nav > ul{
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > nav > ul > li{
+        width: 100%;
+        padding: .5%;
+        margin: 0;
+    }
+
+    header > nav > ul > li > a{
+        width: 100%;
+        padding: .5%;
+        margin: .5% 0;
+    }
+}
