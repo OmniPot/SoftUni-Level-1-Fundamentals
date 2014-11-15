@@ -1,35 +1,41 @@
 function findMaxSequence(arr) {
     var sequences = [];
     var bestlen = 1;
+
     function generateSequences(array) {
         var currentSeq = [];
         for (var i = 1; i <= array.length; i++) {
-            if (array[i-1] === array[i]){
-                currentSeq.push(array[i-1]);
-            }else{
-                currentSeq.push(array[i-1]);
+            if (array[i - 1] === array[i]) {
+                currentSeq.push(array[i - 1]);
+            } else {
+                currentSeq.push(array[i - 1]);
                 sequences.push(currentSeq);
                 currentSeq = [];
             }
         }
+        return sequences;
     }
+
     function findBestLen(arrays) {
-        for (var i = 0; i < arrays.length ; i++){
-            if (arrays[i].length > bestlen){
+        for (var i = 0; i < arrays.length; i++) {
+            if (arrays[i].length > bestlen) {
                 bestlen = arrays[i].length;
             }
         }
         return bestlen;
     }
-    generateSequences(arr);
-    findBestLen(sequences);
 
-    for (var i = sequences.length-1; i >= 0; i--){
-        if (sequences[i].length == bestlen){
-            console.log(sequences[i]);
-            return;
+    function printBestSequence(arr, length) {
+        for (var i = arr.length - 1; i >= 0; i--) {
+            if (arr[i].length == length) {
+                console.log(arr[i]);
+                return;
+            }
         }
     }
+
+    printBestSequence(generateSequences(arr), findBestLen(sequences));
+
 }
 findMaxSequence([2, 1, 1, 2, 3, 3, 2, 2, 2, 1]);
 findMaxSequence(['happy']);

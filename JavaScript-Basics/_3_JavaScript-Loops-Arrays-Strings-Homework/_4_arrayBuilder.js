@@ -1,8 +1,10 @@
 function arrayBuilder() {
     var arr = Array(20);
-    for (var i = 0 ; i < 20 ; i++){
-        arr[i] = i*5;
+    var result = "";
+    for (var i = 0; i <= 20; i++) {
+        arr[i] = i * 5;
+        result += arr[i] + " ";
     }
-    console.log(arr);
+    console.log(result);
 }
 arrayBuilder();
