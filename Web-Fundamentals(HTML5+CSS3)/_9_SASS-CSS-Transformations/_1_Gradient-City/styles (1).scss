@@ -1,0 +1,250 @@
+$main-font-size: 16px;
+$background-gray: #838383;
+$border-color: rgba(151, 151, 151, 0.70);
+$purple: #3c0e3c;
+$blue: #1111b5;
+$green: #154215;
+$yellow: #f6f616;
+$orange: #ed9910;
+$red: #d21414;
+$white: #fff;
+
+@mixin border-double {
+  border: 3px double $border-color;;
+}
+
+@mixin border-solid{
+  border: 2px solid $border-color;
+}
+
+@mixin box($background: none) {
+  border: none;
+  border-radius: 10px;
+  width: 130px;
+  height: 150px;
+  margin: 20px -4px 20px 0;
+  display: inline-block;
+}
+
+@mixin linear-gradient($direction, $first-color, $second-color) {
+  background: -moz-linear-gradient($direction, $first-color, $second-color); /* FF3.6+ */
+  background: -webkit-linear-gradient($direction, $first-color, $second-color); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient($direction, $first-color, $second-color); /* Opera 11.10+ */
+  background: -ms-linear-gradient($direction, $first-color, $second-color); /* IE10+ */
+}
+
+@mixin radial-gradient($first-color, $second-color) {
+  background: -webkit-radial-gradient($first-color 0, $second-color 100%); /* For Safari 5.1 to 6.0 */
+  background: -o-radial-gradient($first-color 0, $second-color 100%); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient($first-color 0, $second-color 100%); /* For Fx 3.6 to 15 */
+  background: radial-gradient($first-color 0, $second-color 100%); /* Standard syntax (must be last) */
+}
+
+body {
+  @include linear-gradient(bottom, $white, $background-gray);
+  margin-bottom: 0;
+
+  div#wrapper {
+    background: $white;
+    padding: 2%;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: -.7%;
+    @include border-double;
+
+    > header {
+      @include border-double;
+      margin-bottom: 2%;
+
+      h1 {
+        font-size: $main-font-size * 2.5;
+        font-weight: bolder;
+        text-align: center;
+        color: $background-gray
+      }
+
+      > nav {
+
+        ul {
+          width: 50%;
+          margin-left: 22%;
+
+          li {
+            display: inline-block;
+            margin-right: 12%;
+
+            a {
+              display: inline-block;
+              width: 100%;
+              padding: 10px 10px;
+              @include border-double;
+              text-align: center;
+              text-decoration: none;
+              color: $background-gray;
+
+              &:hover {
+                color: #ffffff;
+                @include linear-gradient(bottom, $white, $background-gray);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    section {
+      @include border-double;
+      margin-bottom: 2%;
+
+      > header {
+
+        h1 {
+          font-size: $main-font-size * 1.5;
+          font-weight: normal;
+          text-align: center;
+          text-decoration: underline;
+          color: $background-gray
+        }
+      }
+
+      article {
+        @include border-solid;
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+
+        h2 {
+          font-size: $main-font-size;
+          font-weight: normal;
+          text-align: center;
+          color: $background-gray;
+          margin-bottom: -10px;
+        }
+
+        div.innerContainer {
+          margin-left: 4%;
+          div {
+            @include box();
+          }
+        }
+      }
+
+      &.linear {
+        article:nth-of-type(1) div.innerContainer div {
+          &.purple {
+            @include linear-gradient(top, $purple, $white)
+          }
+          &.blue {
+            @include linear-gradient(top, $blue, $white)
+          }
+          &.green {
+            @include linear-gradient(top, $green, $white)
+          }
+          &.yellow {
+            @include linear-gradient(top, $yellow, $white)
+          }
+          &.orange {
+            @include linear-gradient(top, $orange, $white)
+          }
+          &.red {
+            @include linear-gradient(top, $red, $white)
+          }
+        }
+
+        article:nth-of-type(2) div.innerContainer div {
+          &.purple {
+            @include linear-gradient(left, $purple, $white)
+          }
+          &.blue {
+            @include linear-gradient(left, $blue, $white)
+          }
+          &.green {
+            @include linear-gradient(left, $green, $white)
+          }
+          &.yellow {
+            @include linear-gradient(left, $yellow, $white)
+          }
+          &.orange {
+            @include linear-gradient(left, $orange, $white)
+          }
+          &.red {
+            @include linear-gradient(left, $red, $white)
+          }
+        }
+
+        article:nth-of-type(3) div.innerContainer div {
+          &.purple {
+            @include linear-gradient(top left, $purple, $white)
+          }
+          &.blue {
+            @include linear-gradient(top left, $blue, $white)
+          }
+          &.green {
+            @include linear-gradient(top left, $green, $white)
+          }
+          &.yellow {
+            @include linear-gradient(top left, $yellow, $white)
+          }
+          &.orange {
+            @include linear-gradient(top left, $orange, $white)
+          }
+          &.red {
+            @include linear-gradient(top left, $red, $white)
+          }
+        }
+      }
+
+      &.radial {
+        article:nth-of-type(1) div.innerContainer div {
+          &.purple {
+            @include radial-gradient($purple, $white)
+          }
+          &.blue {
+            @include radial-gradient($blue, $white)
+          }
+          &.green {
+            @include radial-gradient($green, $white)
+          }
+          &.yellow {
+            @include radial-gradient($yellow, $white)
+          }
+          &.orange {
+            @include radial-gradient($orange, $white)
+          }
+          &.red {
+            @include radial-gradient($red, $white)
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    @include border-double;
+
+    h3 {
+      font-size: $main-font-size * 1.2;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+      color: $background-gray
+    }
+
+    ul {
+      width: 250px;
+      list-style: none;
+      margin: 0 auto;
+      margin-bottom: 1.5%;
+      padding: 0;
+      text-align: center;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $background-gray;
+        }
+      }
+    }
+  }
+}
+
